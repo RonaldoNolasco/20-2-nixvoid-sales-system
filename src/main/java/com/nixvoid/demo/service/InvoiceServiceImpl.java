@@ -1,8 +1,8 @@
-package academy.digitallab.store.product.service;
+package com.nixvoid.demo.service;
 
-import academy.digitallab.store.product.repository.InvoiceItemsRepository;
-import academy.digitallab.store.product.repository.InvoiceRepository;
-import academy.digitallab.store.product.entity.Invoice;
+import com.nixvoid.demo.repository.InvoiceItemsRepository;
+import com.nixvoid.demo.repository.InvoiceRepository;
+import com.nixvoid.demo.entity.Invoice;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

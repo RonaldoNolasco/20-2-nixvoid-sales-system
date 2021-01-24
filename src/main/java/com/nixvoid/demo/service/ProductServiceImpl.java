@@ -1,8 +1,8 @@
-package academy.digitallab.store.product.service;
+package com.nixvoid.demo.service;
 
-import academy.digitallab.store.product.entity.Category;
-import academy.digitallab.store.product.entity.Product;
-import academy.digitallab.store.product.repository.ProductRepository;
+import com.nixvoid.demo.entity.Category;
+import com.nixvoid.demo.entity.Product;
+import com.nixvoid.demo.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

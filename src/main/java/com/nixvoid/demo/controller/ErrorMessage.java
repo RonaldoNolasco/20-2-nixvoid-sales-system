@@ -1,4 +1,4 @@
-package academy.digitallab.store.product.controller;
+package com.nixvoid.demo.controller;
 
 import lombok.Builder;
 import lombok.Getter;

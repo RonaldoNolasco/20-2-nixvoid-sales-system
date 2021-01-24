@@ -1,7 +1,7 @@
-package academy.digitallab.store.product.controller;
+package com.nixvoid.demo.controller;
 
-import academy.digitallab.store.product.service.InvoiceService;
-import academy.digitallab.store.product.entity.Invoice;
+import com.nixvoid.demo.service.InvoiceService;
+import com.nixvoid.demo.entity.Invoice;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;

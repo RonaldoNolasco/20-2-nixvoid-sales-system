@@ -1,7 +1,7 @@
-package academy.digitallab.store.product.service;
+package com.nixvoid.demo.service;
 
-import academy.digitallab.store.product.entity.Category;
-import academy.digitallab.store.product.entity.Product;
+import com.nixvoid.demo.entity.Category;
+import com.nixvoid.demo.entity.Product;
 
 import java.util.List;
 

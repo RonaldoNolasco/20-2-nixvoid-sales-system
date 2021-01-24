@@ -1,7 +1,7 @@
-package academy.digitallab.store.product.repository;
+package com.nixvoid.demo.repository;
 
-import academy.digitallab.store.product.entity.Category;
-import academy.digitallab.store.product.entity.Product;
+import com.nixvoid.demo.entity.Category;
+import com.nixvoid.demo.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

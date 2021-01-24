@@ -1,10 +1,10 @@
-package academy.digitallab.store.product;
+package com.nixvoid.demo;
 
-import academy.digitallab.store.product.entity.Category;
-import academy.digitallab.store.product.entity.Product;
-import academy.digitallab.store.product.repository.ProductRepository;
-import academy.digitallab.store.product.service.ProductService;
-import academy.digitallab.store.product.service.ProductServiceImpl;
+import com.nixvoid.demo.entity.Category;
+import com.nixvoid.demo.entity.Product;
+import com.nixvoid.demo.repository.ProductRepository;
+import com.nixvoid.demo.service.ProductService;
+import com.nixvoid.demo.service.ProductServiceImpl;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,8 +1,8 @@
-package academy.digitallab.store.product.controller;
+package com.nixvoid.demo.controller;
 
-import academy.digitallab.store.product.service.CustomerService;
-import academy.digitallab.store.product.entity.Customer;
-import academy.digitallab.store.product.entity.Region;
+import com.nixvoid.demo.service.CustomerService;
+import com.nixvoid.demo.entity.Customer;
+import com.nixvoid.demo.entity.Region;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;

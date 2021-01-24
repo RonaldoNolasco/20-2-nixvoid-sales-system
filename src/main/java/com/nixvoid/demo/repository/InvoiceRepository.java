@@ -1,6 +1,6 @@
-package academy.digitallab.store.product.repository;
+package com.nixvoid.demo.repository;
 
-import academy.digitallab.store.product.entity.Invoice;
+import com.nixvoid.demo.entity.Invoice;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

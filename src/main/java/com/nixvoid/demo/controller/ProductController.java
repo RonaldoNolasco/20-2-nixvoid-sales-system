@@ -1,8 +1,8 @@
-package academy.digitallab.store.product.controller;
+package com.nixvoid.demo.controller;
 
-import academy.digitallab.store.product.entity.Category;
-import academy.digitallab.store.product.entity.Product;
-import academy.digitallab.store.product.service.ProductService;
+import com.nixvoid.demo.entity.Category;
+import com.nixvoid.demo.entity.Product;
+import com.nixvoid.demo.service.ProductService;
 import ch.qos.logback.core.pattern.util.RegularEscapeUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

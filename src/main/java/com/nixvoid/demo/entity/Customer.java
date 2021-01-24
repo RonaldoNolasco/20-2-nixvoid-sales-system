@@ -1,4 +1,4 @@
-package academy.digitallab.store.product.entity;
+package com.nixvoid.demo.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;

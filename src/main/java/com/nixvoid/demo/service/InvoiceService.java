@@ -1,6 +1,6 @@
-package academy.digitallab.store.product.service;
+package com.nixvoid.demo.service;
 
-import academy.digitallab.store.product.entity.Invoice;
+import com.nixvoid.demo.entity.Invoice;
 
 import java.util.List;
 
