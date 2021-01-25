@@ -28,7 +28,7 @@ public class CustomerRest {
     @Autowired
     CustomerService customerService;
 
-    // -------------------Retrieve All Customers--------------------------------------------
+    // -------------------Obtener todos los clientes--------------------------------------------
 
     @GetMapping
     public ResponseEntity<List<Customer>> listAllCustomers(@RequestParam(name = "regionId" , required = false) Long regionId ) {
@@ -51,7 +51,7 @@ public class CustomerRest {
         return  ResponseEntity.ok(customers);
     }
 
-    // -------------------Retrieve Single Customer------------------------------------------
+    // ------------------- Obtener clientes por id ------------------------------------------
 
     @GetMapping(value = "/{id}")
     public ResponseEntity<Customer> getCustomer(@PathVariable("id") long id) {
@@ -64,7 +64,7 @@ public class CustomerRest {
         return  ResponseEntity.ok(customer);
     }
 
-    // -------------------Create a Customer-------------------------------------------
+    // ------------------- Crear un cliente -------------------------------------------
 
     @PostMapping
     public ResponseEntity<Customer> createCustomer(@Valid @RequestBody Customer customer, BindingResult result) {
@@ -78,7 +78,7 @@ public class CustomerRest {
         return  ResponseEntity.status( HttpStatus.CREATED).body(customerDB);
     }
 
-    // ------------------- Update a Customer ------------------------------------------------
+    // ------------------- Actualizar Cliente  ------------------------------------------------
 
     @PutMapping(value = "/{id}")
     public ResponseEntity<?> updateCustomer(@PathVariable("id") long id, @RequestBody Customer customer) {
@@ -95,7 +95,7 @@ public class CustomerRest {
         return  ResponseEntity.ok(currentCustomer);
     }
 
-    // ------------------- Delete a Customer-----------------------------------------
+    // ------------------- Borrar cliente -----------------------------------------
 
     @DeleteMapping(value = "/{id}")
     public ResponseEntity<Customer> deleteCustomer(@PathVariable("id") long id) {

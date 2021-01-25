@@ -27,6 +27,7 @@ public class ProductController {
     @Autowired
     private ProductService productService ;
 
+    // ------------------- Recuperar todos los productos -----------------------------------------
     @GetMapping
     public ResponseEntity<List<Product>> listProduct(@RequestParam(name = "categoryId", required = false) Long categoryId){
         List<Product> products = new ArrayList<>();
@@ -46,7 +47,7 @@ public class ProductController {
         return ResponseEntity.ok(products);
     }
 
-
+    // ------------------- Recuperar un solo producto -----------------------------------------
     @GetMapping(value = "/{id}")
     public ResponseEntity<Product> getProduct(@PathVariable("id") Long id) {
         Product product =  productService.getProduct(id);
@@ -56,6 +57,7 @@ public class ProductController {
         return ResponseEntity.ok(product);
     }
 
+    // ------------------- Crear productos -----------------------------------------
     @PostMapping
     public ResponseEntity<Product> createProduct(@Valid @RequestBody Product product, BindingResult result){
         if (result.hasErrors()){
@@ -65,6 +67,7 @@ public class ProductController {
         return ResponseEntity.status(HttpStatus.CREATED).body(productCreate);
     }
 
+    // ------------------- Actualizar productos -----------------------------------------
    @PutMapping(value = "/{id}")
     public ResponseEntity<Product> updateProduct(@PathVariable("id") Long id, @RequestBody Product product){
         product.setId(id);
@@ -75,6 +78,7 @@ public class ProductController {
         return ResponseEntity.ok(productDB);
     }
 
+    // ------------------- Borrar producto -----------------------------------------
     @DeleteMapping(value = "/{id}")
     public ResponseEntity<Product> deleteProduct(@PathVariable("id") Long id){
         Product productDelete = productService.deleteProduct(id);
@@ -83,6 +87,8 @@ public class ProductController {
         }
         return ResponseEntity.ok(productDelete);
     }
+
+    // ------------------- Obtener stock de un producto -----------------------------------------
     @GetMapping(value = "/{id}/stock")
     public ResponseEntity<Product> updateStockProduct(@PathVariable  Long id ,@RequestParam(name = "quantity", required = true) Double quantity){
         Product product = productService.updateStock(id, quantity);
